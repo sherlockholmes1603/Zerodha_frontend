@@ -1,0 +1,5 @@
+.universe-img {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the given dimensions */
+}
