@@ -1,20 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <nav
-            className="navbar navbar-expand-lg fixed-top"
+            className="navbar navbar-expand-lg fixed-top mb-5"
             style={{ backgroundColor: "#e3f2fd" }}
         >
             <div className="container p-2">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     <img
                         src="logo.svg"
                         alt="logo.svg"
                         style={{ width: "25%" }}
                     />
-                </a>
+                </Link>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -33,35 +34,34 @@ function Navbar() {
                     <form className="d-flex" role="search">
                         <ul className="navbar-nav me-auto mb-lg-0">
                             <li className="nav-item">
-                                <a
+                                <Link
                                     className="nav-link active"
                                     aria-current="page"
-                                    href="#"
+                                    to="/signup"
                                 >
                                     Signup
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">
+                                <Link className="nav-link active" to="/about">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">
+                                <Link className="nav-link active" to="/product">
                                     Product
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">
+                                <Link className="nav-link active" to="/pricing">
                                     Pricing
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">
+                                <Link className="nav-link active" to="/support">
                                     Support
-                                </a>
+                                </Link>
                             </li>
-                            
                         </ul>
                     </form>
                 </div>
